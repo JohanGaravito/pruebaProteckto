@@ -1,0 +1,9 @@
+CREATE DATABASE tododb
+
+\c tododb
+
+CREATE TABLE todoItems (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(40),
+    iscompleted BOOLEAN
+);
